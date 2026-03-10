@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Lost and Found System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Campus Lost and Found</h1>
+
+<div class="container">
+
+<!-- LOGIN SECTION -->
+<div id="loginSection">
+    <h3>Login</h3>
+
+    <select id="role">
+        <option value="Student">Student</option>
+        <option value="Faculty">Faculty</option>
+    </select>
+
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN SYSTEM -->
+<div id="mainSection" class="hidden">
+
+    <h3 id="welcomeText"></h3>
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <h3>Report Item</h3>
+
+    <select id="type">
+        <option value="Lost">Lost</option>
+        <option value="Found">Found</option>
+    </select>
+
+    <input type="text" id="itemName" placeholder="Item Name">
+    <input type="text" id="description" placeholder="Description">
+    <input type="text" id="location" placeholder="Location">
+
+    <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+    <div class="preview" id="preview"></div>
+
+    <button onclick="addItem()">Submit Item</button>
+
+    <!-- SEARCH BAR -->
+    <h3>Search Item</h3>
+
+    <input 
+        type="text" 
+        id="searchBar" 
+        placeholder="Search by item name..." 
+        onkeyup="searchItems()"
+    >
+
+    <h3>Reported Items</h3>
+    <div id="itemsList"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

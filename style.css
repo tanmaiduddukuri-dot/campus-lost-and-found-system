@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    max-width: 750px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e59d9;
+}
+
+.hidden {
+    display: none;
+}
+
+.item {
+    background: #f8f9fc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.logout {
+    background-color: #e74a3b;
+}
+
+.logout:hover {
+    background-color: #c0392b;
+}
+
+.preview img {
+    width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* SEARCH BAR STYLE */
+#searchBar {
+    border: 2px solid #4e73df;
+    outline: none;
+}
+
+#searchBar:focus {
+    border-color: #1cc88a;
+    box-shadow: 0 0 5px rgba(28, 200, 138, 0.5);
+}
